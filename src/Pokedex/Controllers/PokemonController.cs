@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,9 +13,19 @@ namespace Pokedex.Controllers
     {
         // GET api/pokemon
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public async Task<ActionResult<IEnumerable<string>>> Get()
         {
+            var result = await GetPokemon();
             return new string[] { "value1", "value2" };
+        }
+
+        private async Task<string> GetPokemon()
+        {
+            using (var client = new HttpClient())
+            {
+                var response = await client.GetAsync("https://pokeapi.co/api/v2/pokemon/ditto");
+                return await response.Content.ReadAsStringAsync();
+            }
         }
 
         // GET api/pokemon/5
