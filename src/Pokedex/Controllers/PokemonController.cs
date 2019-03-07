@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,40 +13,37 @@ namespace Pokedex.Controllers
     [ApiController]
     public class PokemonController : ControllerBase
     {
+        private static List<string> caughtPokemon = new List<string>();
+
         // GET api/pokemon
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<string>>> Get()
+        public async Task<ActionResult<string>> Get()
         {
-            var result = await GetPokemon();
-            return new string[] { "value1", "value2" };
-        }
-
-        private async Task<string> GetPokemon()
-        {
-            using (var client = new HttpClient())
-            {
-                var response = await client.GetAsync("https://pokeapi.co/api/v2/pokemon/ditto");
-                return await response.Content.ReadAsStringAsync();
-            }
+            return await System.IO.File.ReadAllTextAsync("./Resources/all-pokemon.json");
         }
 
         // GET api/pokemon/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public async Task<ActionResult<string>> Get(string id)
         {
-            return "value";
+            using (var client = new HttpClient())
+            {
+                var response = await client.GetAsync($"https://pokeapi.co/api/v2/pokemon/{id}");
+                return await response.Content.ReadAsStringAsync();
+            }
         }
 
         // POST api/pokemon
-        [HttpPost]
-        public void Post([FromBody] string value)
+        [HttpPost("pokedex")]
+        public void AddPokemonToPokedex([FromBody] string value)
         {
+            caughtPokemon.Add(value);
         }
 
-        // PUT api/pokemon/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpGet("pokedex")]
+        public ActionResult<string> GetPokemonInPokedex()
         {
+            return Ok(caughtPokemon);
         }
 
         // DELETE api/pokemon/5
