@@ -25,6 +25,10 @@ We judge the solution on:
 - the architecture of the solution and the technologies used
 - your solution for the use case
 
+I you have any questions, don't hesitate to ask them at w.loth@arcady.nl or s.koster@arcady.nl.
+
+Good luck with the assignment!
+
 ## Solution
 
 Clone this repository (do not fork), make a branch and create a pull request.
