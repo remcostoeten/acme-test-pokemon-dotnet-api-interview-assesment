@@ -36,7 +36,14 @@ namespace Pokedex.Controllers
       }
     }
 
-    // POST api/pokemon
+    // GET api/pokemon/pokedex
+    [HttpGet("pokedex")]
+    public ActionResult<string> GetPokemonInPokedex()
+    {
+      return Ok(caughtPokemon);
+    }
+
+    // POST api/pokemon/5/pokedex
     [HttpPost("{id}/pokedex")]
     public async Task<ActionResult<string>> AddPokemonToPokedex(int id)
     {
@@ -71,13 +78,7 @@ namespace Pokedex.Controllers
       }
     }
 
-    [HttpGet("pokedex")]
-    public ActionResult<string> GetPokemonInPokedex()
-    {
-      return Ok(caughtPokemon);
-    }
-
-    // DELETE api/pokemon/5
+    // DELETE api/pokemon/5/pokedex
     [HttpDelete("{id}/pokedex")]
     public ActionResult<string> Delete(int id)
     {
