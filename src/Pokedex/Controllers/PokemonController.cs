@@ -49,8 +49,8 @@ namespace Pokedex.Controllers
         var pokemonJson = await Get(id);
 
         JObject jObject = JObject.Parse(pokemonJson.Value);
-        JToken jUser = jObject["name"];
-        var name = (string)jUser;
+        JToken jName = jObject["name"];
+        var name = (string)jName;
 
         Pokemon pokemon = new Pokemon(id);
         pokemon.Name = name;
