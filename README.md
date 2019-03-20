@@ -2,35 +2,36 @@
 
 ## Installation & run
 
-- Install .NET Core 2.2
+- Download and install [.NET Core 2.2](https://dotnet.microsoft.com/download)
 - Open a terminal in `src/Pokedex`
 - Run `dotnet run`
-- Visit `http://localhost:5000/swagger` to see the API
-  documentation
+- Visit `http://localhost:5000/swagger` to see the API documentation
 - Create your frontend in the the folder `src/Frontend`
 
 ## Assement
 
-Use the REST API to show the pokemons on a web page. You must be able to catch the pokemons for your own pokedex. You could use Angular, Vue, React, Polymer or JavaScript for this.
-
-Use your own creativity for the styling of the application.
-
+Use the REST API to show the Pokémon on a web page. You must be able to catch the Pokémon for your own Pokédex.  
+You're allowed to use any frontend framework/library/technology for this. Feel free to use what you are most comfortable with.  
 We expect that you’ll need about 3 to 5 hours for the assessment. If you're running out of time, let us know what you wanted to do, but didn't have time for.
 
-**NOTE**: Please do not use a generator (like yeoman), because then it is very difficult for us to determine what you have written yourself and what parts are generated.
+**Notes:**
+- Please do not use a code generator like Yeoman, or starter repositories containing an empty app.
+    - _Using framework-provided tooling like the Angular/Vue CLI and create-react-app is fine_
+- Use your own creativity for the styling of the application.
 
-We judge the solution on:
+**We judge the solution on:**
+- The overall approach you took to the assignment
+- Your solution for the use case
+- The architecture of the solution and the technologies used
+- Quality of the code
+- Tests for critical functionality
 
-- the overall approach you took to the assignment
-- the architecture of the solution and the technologies used
-- your solution for the use case
-
-I you have any questions, don't hesitate to ask them at w.loth@arcady.nl or s.koster@arcady.nl.
+I you have any questions, don't hesitate to ask them at [w.loth@arcady.nl](mailto:w.loth@arcady.nl) or [s.koster@arcady.nl](mailto:s.koster@arcady.nl).
 
 Good luck with the assignment!
 
 ## Solution
 
-Clone this repository (do not fork), make a branch and create a pull request.
-
-Please add a readme.md to describe your own solution
+Clone this repository (do not fork), make a branch and create a pull request.  
+When done, please add an `ASSESSMENT.md` file to describe your own solution.  
+Use this file to highlight the challenges you had, the things you would have liked to do and anything else you would like to explain.  
