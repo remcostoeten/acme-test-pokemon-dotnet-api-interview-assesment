@@ -15,11 +15,13 @@ You're allowed to use any frontend framework/library/technology for this. Feel f
 We expect that you’ll need about 3 to 5 hours for the assessment. If you're running out of time, let us know what you wanted to do, but didn't have time for.
 
 **Notes:**
+
 - Please do not use a code generator like Yeoman, or starter repositories containing an empty app.
-    - _Using framework-provided tooling like the Angular/Vue CLI and create-react-app is fine_
+  - _Using framework-provided tooling like the Angular/Vue CLI and create-react-app is fine_
 - Use your own creativity for the styling of the application.
 
-**We judge the solution on:**
+**We evaluate the solution on:**
+
 - The overall approach you took to the assignment
 - Your solution for the use case
 - The architecture of the solution and the technologies used
@@ -34,4 +36,4 @@ Good luck with the assignment!
 
 Clone this repository (do not fork), make a branch and create a pull request.  
 When done, please add an `ASSESSMENT.md` file to describe your own solution.  
-Use this file to highlight the challenges you had, the things you would have liked to do and anything else you would like to explain.  
+Use this file to highlight the challenges you had, the things you would have liked to do and anything else you would like to explain.
