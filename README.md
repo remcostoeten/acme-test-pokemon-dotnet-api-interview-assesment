@@ -2,17 +2,17 @@
 
 ## Installation & run
 
-- Download and install [.NET Core 2.2](https://dotnet.microsoft.com/download)
+- Download and install the latest [.NET Core SDK](https://dotnet.microsoft.com/download)
 - Open a terminal in `src/Pokedex`
 - Run `dotnet run`
-- Visit `http://localhost:5000/swagger` to see the API documentation
-- Create your frontend in the the folder `src/Frontend`
+- Visit [`http://localhost:5000/swagger`](http://localhost:5000/swagger) to see the API documentation
+- Create your frontend in the the folder `src/frontend`
 
 ## Assement
 
-Use the REST API to show the Pokémon on a web page. You must be able to catch the Pokémon for your own Pokédex.  
+Use the REST API to show the Pokémon on a web page. You must be able to "catch" the Pokémon for your own Pokédex.  
 You're allowed to use any frontend framework/library/technology for this. Feel free to use what you are most comfortable with.  
-We expect that you’ll need about 3 to 5 hours for the assessment. If you're running out of time, let us know what you wanted to do, but didn't have time for.
+We expect that you’ll need about 2 to 5 hours for the assessment. If you're running out of time, let us know what you wanted to do, but didn't have time for.
 
 **Notes:**
 
