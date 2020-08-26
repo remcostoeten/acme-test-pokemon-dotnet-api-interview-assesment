@@ -1,4 +1,4 @@
-namespace Pokedex.Controllers
+namespace PokedexAPI.Controllers
 {
   public class Pokemon
   {
