@@ -3,7 +3,7 @@
 ## Installation & run
 
 - Download and install the latest [.NET Core SDK](https://dotnet.microsoft.com/download)
-- Open a terminal in `src/Pokedex`
+- Open a terminal in `src/PokedexAPI`
 - Run `dotnet run`
 - Visit [`http://localhost:5000/swagger`](http://localhost:5000/swagger) to see the API documentation
 - Create your frontend in the the folder `src/frontend`
