@@ -2,7 +2,7 @@
 
 ## Installation & run
 
-- Download and install the latest [.NET Core SDK](https://dotnet.microsoft.com/download)
+- Download and install the latest [.NET SDK](https://dotnet.microsoft.com/download) _(.NET 5.0 and higher recommended)_
 - Open a terminal in `src/PokedexAPI`
 - Run `dotnet run`
 - Visit [`http://localhost:5000/swagger`](http://localhost:5000/swagger) to see the API documentation
