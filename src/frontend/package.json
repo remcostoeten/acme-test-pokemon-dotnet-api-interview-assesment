@@ -7,7 +7,10 @@
     "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format:write": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache",
+    "format": "next lint --fix && prettier '**/*.{json,yaml}' --write --ignore-path .gitignore",
+    "typecheck": "tsc --noEmit --pretty"
   },
   "dependencies": {
     "react": "^18",
