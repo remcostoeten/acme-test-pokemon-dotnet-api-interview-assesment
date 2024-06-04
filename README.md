@@ -28,7 +28,7 @@ We expect that you’ll need about 2 to 5 hours for the assessment. If you're ru
 - Quality of the code
 - Tests for critical functionality
 
-If you have any questions, don't hesitate to ask them to [w.loth@arcady.nl](mailto:w.loth@arcady.nl).
+If you have any questions, don't hesitate to ask ****corpmail.
 
 Good luck with the assignment!
 
